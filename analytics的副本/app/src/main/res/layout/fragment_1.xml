@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="@string/automation_fragment1"
+        android:textSize="20sp" />
+
+    <com.alipay.mobile.antui.segement.AUSegment
+        android:id="@+id/view_tab"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        aui:tab1Text="@string/automation_view_tab1"
+        aui:tab2Text="@string/automation_view_tab2"
+        aui:tabCount="2" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/text1"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/view1"
+        android:gravity="center"
+        android:text="@string/automation_view1"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/text2"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/view2"
+        android:gravity="center"
+        android:text="@string/automation_view2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

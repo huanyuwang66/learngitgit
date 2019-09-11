@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mpaas.demo.analytics.AutomationActivity">
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/automation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.alipay.mobile.antui.segement.AUSegment
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        aui:tab1Text="@string/automation_tab1"
+        aui:tab2Text="@string/automation_tab2"
+        aui:tabCount="2" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
